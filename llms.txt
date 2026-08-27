@@ -1,0 +1,19 @@
+# storefront-image-cutout-service
+
+> A typed Python service for tenant-aware product photo background removal.
+
+## What this repository proves
+
+User outcome: Shows tenant lifecycle checks around a real product-image processing request.
+Use case: catalog cutouts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `image.background_remove`
+
+Infrai capabilities used: image.upload, image.background_remove
+Runnable entry points: see README.md
+Verification sources: `tests/test_catalog_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

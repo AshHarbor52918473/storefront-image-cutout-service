@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "catalog-service"
+version = "0.1.0"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["catalog_service"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
